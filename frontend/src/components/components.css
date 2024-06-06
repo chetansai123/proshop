@@ -1,0 +1,30 @@
+.product-title {
+  height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.star {
+  color: gold;
+}
+.rating {
+  margin-left: 0.6rem;
+  font-weight: 500;
+}
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
