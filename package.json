@@ -1,0 +1,38 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon backend/bin/server.js",
+    "client": "PORT=3002 npm start --prefix frontend",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "import": "node backend/data/seeding.js",
+    "destroy": "node backend/data/seeding.js -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetansai123/proshop.git"
+  },
+  "author": "chetan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chetansai123/proshop/issues"
+  },
+  "homepage": "https://github.com/chetansai123/proshop#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.3"
+  }
+}
